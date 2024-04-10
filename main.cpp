@@ -18,7 +18,7 @@ int main(){
 		cin>>mode;
 						    
 		if(mode == 1)
-			p = new Stack<int>();    // 정수를 저장하는 스택
+			p = new Stack<int>();
 			
 		else
 			p = new LinkedList<int>();
