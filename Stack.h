@@ -11,14 +11,14 @@ class Stack : public LinkedList<T> {
 	public:
 		bool Delete (T &element) {
 			//first가 0이면 false반환
-			if(this->first == 0)
+			if(this -> first == 0)
 				return false;
 			// LinkedList와 달리 Stack은 current가 가리키는 곳을 삭제
-			Node<T> *current = this->first;
-			element = current->data;
-			this->first = current->link;
+			Node<T> *current = this -> first;
+			element = current -> data;
+			this -> first = current -> link;
 			delete current;
-			this->current_size--;
+			this -> current_size--;
 			return true;
 		}
 };
