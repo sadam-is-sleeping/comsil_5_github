@@ -7,9 +7,9 @@
 
 //LinkedList class를 상속받음
 template <typename T>
-class Stack : public LinkedList<T>{
+class Stack : public LinkedList<T> {
 	public:
-		bool Delete (T &element){
+		bool Delete (T &element) {
 			//first가 0이면 false반환
 			if(this->first == 0)
 				return false;
@@ -20,5 +20,5 @@ class Stack : public LinkedList<T>{
 			delete current;
 			this->current_size--;
 			return true;
-			}
+		}
 };
